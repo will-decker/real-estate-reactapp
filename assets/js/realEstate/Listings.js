@@ -13,6 +13,10 @@ export default class Listings extends Component {
 	loopListings() {
 		var { listingsData } = this.props
 
+		if (listingsData == undefined || listingsData.length == 0) {
+			return "Sorry your filter did not match any listing"
+		}
+
 		return listingsData.map((listing, index) => {
 			return (<div className="col-md-3" key={index}>
 				<div className="listing">
@@ -44,7 +48,7 @@ export default class Listings extends Component {
 						</div>
 					</div>
 					<div className="bottom-info">
-						<span className="price">{listing.price}</span>
+						<span className="price">${listing.price}</span>
 						<span className="location">
 							<i className="fa fa-map-marker" aria-hidden="true">
 							</i> {listing.city}, {listing.state}</span>
@@ -63,9 +67,9 @@ export default class Listings extends Component {
 			<section className="sortby-area">
 				<div className="results">390 results found</div>
 				<div className="sort-options">
-					<select name="sortby" className="sortby">
-						<option value="price-highest">Highest Price</option>
-						<option value="price-lowest">Lowest Price</option>
+					<select name="sortby" className="sortby" onChange={this.props.change}>
+						<option value="price-dsc">Lowest Price</option>
+						<option value="price-asc">Highest Price</option>
 					</select>
 					<div className="view">
 						<i className="fa fa-th-list" aria-hidden="true"></i>

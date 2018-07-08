@@ -7,50 +7,95 @@ export default class Filter extends Component {
 		this.state = {
 			name: 'Joe'
 		}
+		this.cities = this.cities.bind(this)
+		this.homeTypes = this.homeTypes.bind(this)
+		this.bedrooms = this.bedrooms.bind(this)
+	}
+	componentWillMount() {
+		this.props.populateAction()
+	}
+	cities() {
+		if (this.props.globalState.populateFormsData.cities != undefined) {
+			var { cities } = this.props.globalState.populateFormsData
+
+			return cities.map((item) => {
+				return (
+					<option key={item} value={item}>{item}</option>
+				)
+			})
+		}
+	}
+	homeTypes() {
+		if (this.props.globalState.populateFormsData.homeTypes != undefined) {
+			var { homeTypes } = this.props.globalState.populateFormsData
+
+			return homeTypes.map((item) => {
+				return (
+					<option key={item} value={item}>{item}</option>
+				)
+			})
+		}
+	}
+	bedrooms() {
+		if (this.props.globalState.populateFormsData.bedrooms != undefined) {
+			var { bedrooms } = this.props.globalState.populateFormsData
+
+			return bedrooms.map((item) => {
+				return (
+					<option key={item} value={item}>{item}+ BR</option>
+				)
+			})
+		}
 	}
 
 	render() {
 		return (<section id="filter">
 			<div className="inside">
 				<h4>Filter</h4>
-				<select name="neighborhood" className="filters neighborhood">
-					<option>Belleville</option>
+				<label htmlFor="city">City</label>
+				<select name="city" className="filters city" onChange={this.props.change}>
+					<option value="All Cities">All Cities</option>
+					{this.cities()}
 				</select>
-				<select name="housetype" className="filters housetype">
-					<option>Ranch</option>
+				<label htmlFor="homeType">Home Type</label>
+				<select name="homeType" className="filters homeType" onChange={this.props.change}>
+					<option value="All Home Types">All Home Types</option>
+					{this.homeTypes()}
 				</select>
-				<select name="bedrooms" className="filters bedrooms">
-					<option>2 BR</option>
+				<label htmlFor="bedrooms">Bedrooms</label>
+				<select name="bedrooms" className="filters bedrooms" onChange={this.props.change}>
+					<option value="0">0+ BR</option>
+					{this.bedrooms()}
 				</select>
 				<div className="filters price">
 					<span className="title">Price</span>
-					<input type="text" name="min-price" className="min-price" />
-					<input type="text" name="max-price" className="max-price" />
+					<input type="text" name="min_price" className="min-price" onChange={this.props.change} value={this.props.globalState.min_price} />
+					<input type="text" name="max_price" className="max-price" onChange={this.props.change} value={this.props.globalState.max_price} />
 				</div>
 				<div className="filters floor-space">
 					<span className="title">Floor Space</span>
-					<input type="text" name="min-floor-space" className="min-floor-space" />
-					<input type="text" name="max-floor-space" className="max-floor-space" />
+					<input type="text" name="min_floor_space" className="min-floor-space" onChange={this.props.change} value={this.props.globalState.min_floor_space} />
+					<input type="text" name="max_floor_space" className="max-floor-space" onChange={this.props.change} value={this.props.globalState.max_floor_space} />
 				</div>
 				<div className="filters amenities">
 					<span className="title">
 						Amenities
 					</span>
-					<label for="amenities">
+					<label htmlFor="amenities">
 						<span>Elevators</span>
-						<input name="amenities" value="elevator" type="checkbox" />
+						<input name="elevator" value="elevator" type="checkbox" onChange={this.props.change} />
 					</label>
-					<label for="amenities">
+					<label htmlFor="amenities">
 						<span>Swimming Pool</span>
-						<input name="amenities" value="swimming-pool" type="checkbox" />
+						<input name="swimming_pool" value="swimming_pool" type="checkbox" onChange={this.props.change} />
 					</label>
-					<label for="amenities">
+					<label htmlFor="amenities">
 						<span>Fireplace</span>
-						<input name="amenities" value="fireplace" type="checkbox" />
+						<input name="fireplace" value="fireplace" type="checkbox" onChange={this.props.change} />
 					</label>
-					<label for="amenities">
+					<label htmlFor="amenities">
 						<span>Storage</span>
-						<input name="amenities" value="storage" type="checkbox" />
+						<input name="storage" value="storage" type="checkbox" onChange={this.props.change} />
 					</label>
 				</div>
 			</div>

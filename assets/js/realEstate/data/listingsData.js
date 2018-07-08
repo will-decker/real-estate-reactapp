@@ -3,7 +3,7 @@ var listingsData = [{
   city: "Buffalo",
   state: "NY",
   rooms: 6,
-  price: "$519555.58",
+  price: "519555",
   floorSpace: 3957,
   amenities: [
     "storage",
@@ -18,7 +18,7 @@ var listingsData = [{
   city: "Bronx",
   state: "NY",
   rooms: 4,
-  price: "$179107.81",
+  price: "179107",
   floorSpace: 2103,
   amenities: [
     "elevator"
@@ -31,7 +31,7 @@ var listingsData = [{
   city: "New York City",
   state: "NY",
   rooms: 4,
-  price: "$336038.44",
+  price: "336038",
   floorSpace: 2012,
   amenities: [
     "elevator",
@@ -45,7 +45,7 @@ var listingsData = [{
   city: "New York City",
   state: "NY",
   rooms: 3,
-  price: "$193278.76",
+  price: "193278",
   floorSpace: 2983,
   amenities: [
     "fireplace",
@@ -59,7 +59,7 @@ var listingsData = [{
   city: "Hartford",
   state: "CT",
   rooms: 4,
-  price: "$177160.73",
+  price: "177160",
   floorSpace: 3563,
   amenities: [
     "fireplace",
@@ -75,7 +75,7 @@ var listingsData = [{
   city: "Jersey City",
   state: "NJ",
   rooms: 3,
-  price: "$635361.14",
+  price: "635361",
   floorSpace: 4658,
   amenities: [
     "fireplace",
@@ -89,7 +89,7 @@ var listingsData = [{
   city: "Jamaica",
   state: "NY",
   rooms: 2,
-  price: "$156213.64",
+  price: "156213",
   floorSpace: 3678,
   amenities: [
     "fireplace",
@@ -103,7 +103,7 @@ var listingsData = [{
   city: "Trenton",
   state: "NJ",
   rooms: 2,
-  price: "$509873.45",
+  price: "509873",
   floorSpace: 1011,
   amenities: [
     "elevator",
@@ -118,7 +118,7 @@ var listingsData = [{
   city: "New Haven",
   state: "CT",
   rooms: 3,
-  price: "$222347.13",
+  price: "222347",
   floorSpace: 2248,
   amenities: [
     "storage",
@@ -133,7 +133,7 @@ var listingsData = [{
   city: "New York City",
   state: "NY",
   rooms: 2,
-  price: "$403648.85",
+  price: "403648",
   floorSpace: 602,
   amenities: [
     "pool",
@@ -149,7 +149,7 @@ var listingsData = [{
   city: "New York City",
   state: "NY",
   rooms: 5,
-  price: "$548396.15",
+  price: "548396",
   floorSpace: 4323,
   amenities: [
     "elevator"
@@ -162,7 +162,7 @@ var listingsData = [{
   city: "Stamford",
   state: "CT",
   rooms: 1,
-  price: "$249109.69",
+  price: "249109",
   floorSpace: 2200,
   amenities: [
     "storage"
@@ -175,21 +175,21 @@ var listingsData = [{
   city: "Elizabeth",
   state: "NJ",
   rooms: 5,
-  price: "$416183.08",
+  price: "416183",
   floorSpace: 3123,
   amenities: [
     "pool",
     "fireplace"
   ],
   homeType: "Single Family",
-  image: "https://source.unsplash.com/800x600/?home"
+  image: "https://www.bsbdesign.com/wp-content/uploads/2018/04/Meritage-Homes-Solavera-Residence-A-Exterior-at-Dusk-cropped-1024x664.jpg"
 },
 {
   address: "392 Amoth Place",
   city: "Brooklyn",
   state: "NY",
   rooms: 2,
-  price: "$612746.42",
+  price: "612746",
   floorSpace: 1253,
   amenities: [
     "storage",
@@ -197,14 +197,14 @@ var listingsData = [{
     "fireplace"
   ],
   homeType: "Condo",
-  image: "https://source.unsplash.com/800x600/?home"
+  image: "https://www.impressiveinteriordesign.com/wp-content/uploads/2015/08/Modern-Interior-Design-Ideas-For-Apartments-10.jpg"
 },
 {
   address: "249 Bellgrove Way",
   city: "Waterbury",
   state: "CT",
   rooms: 1,
-  price: "$546721.75",
+  price: "146721",
   floorSpace: 173,
   amenities: [
     "fireplace",
@@ -212,14 +212,14 @@ var listingsData = [{
     "storage"
   ],
   homeType: "Apartment",
-  image: "https://source.unsplash.com/800x600/?home"
+  image: "http://nengen.club/g/2/ne/new-york-themed-living-room-style-interior-design-definition-nyc-apartment-designer-apartments-modren-intended-homepolish-small-home-decor-affordable-services-simple-beautiful-860x540.jpg"
 },
 {
   address: "627 Eggendart Trail",
   city: "Rochester",
   state: "NY",
   rooms: 4,
-  price: "$336722.13",
+  price: "336722",
   floorSpace: 1679,
   amenities: [
     "storage",
@@ -227,56 +227,55 @@ var listingsData = [{
     "fireplace"
   ],
   homeType: "Single Family",
-  image: "https://source.unsplash.com/800x600/?home"
+  image: "http://www.interiordesign2014.com/wp-content/uploads/2013/07/palo-alto-designrulz.jpg"
 },
 {
   address: "68 Steensland Court",
   city: "Bronx",
   state: "NY",
   rooms: 3,
-  price: "$437730.99",
+  price: "437730",
   floorSpace: 2927,
   amenities: [
     "pool"
   ],
   homeType: "Condo",
-  image: "https://source.unsplash.com/800x600/?home"
+  image: "http://pastapieandpirouettes.com/wp-content/uploads/2018/03/modern-single-family-homes-large-size-of-family-home-designs-for-elegant-single-family-home-designs-beautiful-modern-single-family-houses.jpg"
 },
 {
   address: "3819 Daystar Drive",
   city: "Trenton",
   state: "NJ",
   rooms: 3,
-  price: "$159723.83",
-  floorSpace: 3348,
+  price: "159723",
+  floorSpace: 1348,
   amenities: [
-    "elevator"
+    "fireplace"
   ],
   homeType: "Single Family",
-  image: "https://source.unsplash.com/800x600/?home"
+  image: "http://denverurbanism.com/wp-content/uploads/2012/05/2012-05-30_1950s_2c.jpg"
 },
 {
   address: "07 Namekagon Street",
-  city: "New York City",
-  state: "NY",
+  city: "Milbury",
+  state: "CT",
   rooms: 6,
-  price: "$235823.34",
+  price: "635823",
   floorSpace: 3626,
   amenities: [
-    "elevator",
     "storage",
     "pool",
     "fireplace"
   ],
   homeType: "Single Family",
-  image: "https://source.unsplash.com/800x600/?home"
+  image: "https://i.pinimg.com/736x/0a/6a/e7/0a6ae7aac388693db750040e54c4a626--cool-houses-big-houses.jpg"
 },
 {
   address: "3 Dixon Alley",
   city: "Jamaica",
   state: "NY",
   rooms: 4,
-  price: "$560484.07",
+  price: "560484",
   floorSpace: 3645,
   amenities: [
     "fireplace",
@@ -292,7 +291,7 @@ var listingsData = [{
   city: "Hicksville",
   state: "NY",
   rooms: 1,
-  price: "$308842.76",
+  price: "308842",
   floorSpace: 3782,
   amenities: [
     "pool",
@@ -307,7 +306,7 @@ var listingsData = [{
   city: "New York City",
   state: "NY",
   rooms: 4,
-  price: "$153571.96",
+  price: "153571",
   floorSpace: 757,
   amenities: [
     "storage",
@@ -323,7 +322,7 @@ var listingsData = [{
   city: "Bronx",
   state: "NY",
   rooms: 4,
-  price: "$271740.33",
+  price: "271740",
   floorSpace: 575,
   amenities: [
     "pool",
@@ -339,7 +338,7 @@ var listingsData = [{
   city: "Jamaica",
   state: "NY",
   rooms: 2,
-  price: "$252753.01",
+  price: "252753",
   floorSpace: 2891,
   amenities: [
     "fireplace",
@@ -354,7 +353,7 @@ var listingsData = [{
   city: "Paterson",
   state: "NJ",
   rooms: 3,
-  price: "$424587.10",
+  price: "424587",
   floorSpace: 2745,
   amenities: [
     "pool",
